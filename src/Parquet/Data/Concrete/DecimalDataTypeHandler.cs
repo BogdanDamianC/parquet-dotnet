@@ -253,6 +253,6 @@ namespace Parquet.Data.Concrete
             writer.Write(itemData);
          }
       }
-
+      protected override void WriteOne(BinaryWriter writer, decimal value) => writer.Write(value);
    }
 }
